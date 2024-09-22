@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function ImagePaginator({ images }: { images: string[] }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -22,10 +23,12 @@ export function ImagePaginator({ images }: { images: string[] }) {
           />
         ))}
       </div>
-      <img
+      <Image
         src={images[currentImageIndex]}
         alt={`Imagem ${currentImageIndex + 1}`}
         className="w-full h-auto rounded-3xl shadow-xl"
+        width={1000}
+        height={1000}
       />
     </div>
   );

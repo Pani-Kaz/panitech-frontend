@@ -9,7 +9,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 import { ImagePaginator } from "@/components/common/ImagePaginator";
 
 export default function Page() {
