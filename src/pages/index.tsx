@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <Main>
-      <section className="w-full min-h-[calc(100vh-63.99px)] flex px-20 max-lg:px-2 justify-center gap-4 flex-col items-center max-lg:items-start">
+      <section className="w-full min-h-[calc(100vh-63.99px)] flex px-20 max-lg:px-2 justify-center gap-4 flex-col items-center max-lg:items-start text-black">
         <h1 className="text-5xl text-center max-lg:text-start font-extrabold text-zinc-800">
           Atendimento eficiente, ágil e integrado
           <br className="max-lg:hidden" /> para o  <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text animate-gradient font-extrabold">

@@ -33,7 +33,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="w-full h-16 flex items-center justify-center gap-32 max-lg:gap-2 px-2 bg-zinc-50 border-b border-solid border-zinc-200 max-lg:justify-between">
+    <header className="w-full h-16 flex items-center justify-center gap-32 max-lg:gap-2 px-2 bg-zinc-50 border-b border-solid border-zinc-200 max-lg:justify-between text-black">
       <Link href={"/"}>
         <Image src={Logo} className="h-9 max-lg:hidden" alt="logo"></Image>
         <Image
