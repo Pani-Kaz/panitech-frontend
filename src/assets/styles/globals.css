@@ -172,3 +172,9 @@ body {
 .fade-out {
   animation: fadeOut 0.5s forwards;
 }
+
+@layer utilities {
+  .perspective-800 {
+    perspective: 800px;
+  }
+}
