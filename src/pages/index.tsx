@@ -9,6 +9,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
+import { ImagePaginator } from "@/components/common/ImagePaginator";
 
 export default function Page() {
   return (
@@ -61,7 +63,7 @@ export default function Page() {
           </Link>
         </div>
       </section>
-      <section className="flex flex-col gap-8 px-[15%] max-lg:px-2 w-full pb-10">
+      <section className="flex flex-col gap-8 px-[15%] max-lg:px-2 w-full pb-10 text-black">
         <h2 className="font-extrabold text-2xl uppercase">
           Com poucos cliques <br />
           você libera:
@@ -115,7 +117,8 @@ export default function Page() {
                   Atendimento com inteligencia artificial
                 </h1>
                 <p className="text-xs font-medium">
-                  Tenha um atendente 100% treinado para sua empresa. Aumente suas vendas com um atendimento eficaz
+                  Tenha um atendente 100% treinado para sua empresa. Aumente
+                  suas vendas com um atendimento eficaz
                 </p>
                 <Link
                   href={"/bomchat"}
@@ -138,10 +141,11 @@ export default function Page() {
                   height="36"
                 />
                 <h1 className="duration-300 transition-all font-bold text-base group-hover:text-blue-700">
-                Seu site personalizado
+                  Seu site personalizado
                 </h1>
                 <p className="text-xs font-medium">
-                Adquira o seu próprio site 100% personalizado, feito sob medida para atender todas as necessidades da sua empresa.
+                  Adquira o seu próprio site 100% personalizado, feito sob
+                  medida para atender todas as necessidades da sua empresa.
                 </p>
                 <Link
                   href={"/bomchat"}
@@ -164,10 +168,11 @@ export default function Page() {
                   height="36"
                 />
                 <h1 className="duration-300 transition-all font-bold text-base group-hover:text-blue-700">
-                Painéis de Gestão e CRM
+                  Painéis de Gestão e CRM
                 </h1>
                 <p className="text-xs font-medium">
-                Tenha um gerenciamento de relacionamento com o cliente 100% integrado com as demais funções
+                  Tenha um gerenciamento de relacionamento com o cliente 100%
+                  integrado com as demais funções
                 </p>
                 <Link
                   href={"/bomchat"}
@@ -182,6 +187,25 @@ export default function Page() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+      </section>
+      <section className="w-full flex flex-col pb-10 items-center gap-4 text-black">
+        <div className="flex items-center flex-col gap-2">
+          <Icon
+            className="text-blue-500"
+            icon="carbon:ibm-vsi-on-vpc-for-regulated-industries"
+            width="32"
+            height="32"
+          />
+          <h2 className="font-bold text-lg tracking-wide text-center">
+            Sua empresa precisa de novas funções
+          </h2>
+        </div>
+        <p className="text-center">
+          Veja nossas principais ferramentas atualmente ativas no mercado
+        </p>
+        <div className="w-[40%] max-lg:w-[95%]">
+          <ImagePaginator images={["/assets/images/dashboard.svg", "/assets/images/crm.jpg"]} />
+        </div>
       </section>
     </Main>
   );
