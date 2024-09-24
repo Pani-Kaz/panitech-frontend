@@ -6,8 +6,8 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 export function Footer() {
   return (
     <footer className="w-full p-4 py-8 flex justify-between px-[15%] max-lg:px-4 max-lg:flex-col items-start gap-20 bg-black text-white">
-      <div className="flex flex-col items-center gap-4">
-        <div className="flex flex-col gap-2 items-center">
+      <div className="flex flex-col items-center max-lg:items-start gap-4">
+        <div className="flex flex-col gap-2 items-center max-lg:items-start">
           <Image src={logo_white} alt="pani-tech_logo" className="w-44"></Image>
           <p className="text-sm font-bold">Soluções em Tecnologia</p>
         </div>
