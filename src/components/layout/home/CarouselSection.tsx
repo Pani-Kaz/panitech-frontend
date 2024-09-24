@@ -59,7 +59,7 @@ export function CarouselSection() {
                 de dividir aréas entre seus funcionários
               </p>
               <Link
-                href={"/bomchat"}
+                href={"/plans"}
                 className={`text-xs font-bold text-blue-500 flex items-center gap-2 duration-500 transition-all hover:text-blue-700`}
               >
                 Ver valores{" "}
@@ -89,7 +89,7 @@ export function CarouselSection() {
                 vendas com um atendimento eficaz
               </p>
               <Link
-                href={"/bomchat"}
+                href={"/plans"}
                 className={`text-xs font-bold text-blue-500 flex items-center gap-2 duration-500 transition-all hover:text-blue-700`}
               >
                 Ver valores{" "}
@@ -119,7 +119,7 @@ export function CarouselSection() {
                 para atender todas as necessidades da sua empresa.
               </p>
               <Link
-                href={"/bomchat"}
+                href={"/plans"}
                 className={`text-xs font-bold text-blue-500 flex items-center gap-2 duration-500 transition-all hover:text-blue-700`}
               >
                 Ver valores{" "}
@@ -149,7 +149,7 @@ export function CarouselSection() {
                 integrado com as demais funções
               </p>
               <Link
-                href={"/bomchat"}
+                href={"/plans"}
                 className={`text-xs font-bold text-blue-500 flex items-center gap-2 duration-500 transition-all hover:text-blue-700`}
               >
                 Ver valores{" "}
