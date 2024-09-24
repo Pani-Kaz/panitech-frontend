@@ -53,7 +53,7 @@ export function PlanCard({
   return (
     <div
       className={`rounded-xl ${
-        custom ? "max-w-96" : "max-w-64"
+        custom ? "max-w-96" : "max-w-[35%] min-w-[25%]"
       } max-lg:max-w-full max-lg:w-full px-2 py-6 border flex flex-col gap-6 border-zinc-200 bg-slate-50 shadow-sm`}
     >
       <div className="flex flex-col">
@@ -149,6 +149,59 @@ export function PlanCard({
             height="20"
           />
           <p className="font-semibold text-xs">Suporte via WhatsApp</p>
+        </div>
+      </div>
+      <div className="flex flex-col">
+        <div className="h-[15px] grid grid-cols-[calc((100%-55px-16px)/2)_55px_calc((100%-55px-16px)/2)] items-center gap-2">
+          <hr className="w-full h-1px border-zinc-200" />
+          <p className="text-[10px] leading-[10px] align-middle text-blue-700 opacity-70 font-bold">
+            Adicionais:
+          </p>
+          <hr className="w-full h-1px border-zinc-200" />
+        </div>
+        <div className="w-full flex flex-col gap-1">
+          <div className="flex flex-col">
+            <div className="grid grid-cols-[10px_calc(100%-10px)] items-center gap-2">
+              <Icon
+                className="text-blue-700"
+                icon="material-symbols:circle"
+                width="10"
+                height="10"
+              />
+              <p className="font-semibold text-xs">Atendente com IA</p>
+            </div>
+            <span className="text-[10px] leading-[10px] font-medium opacity-85">
+              A partir de R$199,99 / Mês
+            </span>
+          </div>
+          <div className="flex flex-col">
+            <div className="grid grid-cols-[10px_calc(100%-10px)] items-center gap-2">
+              <Icon
+                className="text-blue-700"
+                icon="material-symbols:circle"
+                width="10"
+                height="10"
+              />
+              <p className="font-semibold text-xs">Site Personalizado</p>
+            </div>
+            <span className="text-[10px] leading-[10px] font-medium opacity-85">
+              A partir de R$799,99 + R$59,99 / Mês
+            </span>
+          </div>
+          <div className="flex flex-col">
+            <div className="grid grid-cols-[10px_calc(100%-10px)] items-center gap-2">
+              <Icon
+                className="text-blue-700"
+                icon="material-symbols:circle"
+                width="10"
+                height="10"
+              />
+              <p className="font-semibold text-xs">Painéis de Gestão e CRM</p>
+            </div>
+            <span className="text-[10px] leading-[12px] font-medium opacity-85">
+              A partir de R$59,99 / Mês<br/>(Gratuito no Plano anual)
+            </span>
+          </div>
         </div>
       </div>
       <Button className="bg-blue-700 duration-500 transition-all hover:bg-blue-900 text-white">
